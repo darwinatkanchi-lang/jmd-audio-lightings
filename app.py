@@ -57,7 +57,7 @@ def common_data():
         "business_email": BUSINESS_EMAIL,
         "admin_logged_in": admin_required()
     }
-@app.route("/Google997b3a6b1056a0ca.html")
+@app.route("/google997b3a6b1056a0ca.html")
 def google_verification():
     file_path = BASE_DIR / "Google997b3a6b1056a0ca.html"
     return app.response_class(
