@@ -64,6 +64,19 @@ def google_verification():
         file_path.read_bytes(),
         mimetype="text/html"
     )
+
+@app.route("/sitemap.xml")
+def sitemap():
+    xml = """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://jmd-audio-lightings.onrender.com/</loc>
+  </url>
+</urlset>"""
+    return app.response_class(xml, mimetype="application/xml")
+
+
+
 @app.route("/")
 def home():
     with db() as con:
