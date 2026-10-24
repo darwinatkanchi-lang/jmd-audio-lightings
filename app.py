@@ -59,7 +59,7 @@ def common_data():
     }
 @app.route("/google997b3a6b1056a0ca.html")
 def google_verification():
-    file_path = BASE_DIR / "Google997b3a6b1056a0ca.html"
+    file_path = BASE_DIR / "google997b3a6b1056a0ca.html"
     return app.response_class(
         file_path.read_bytes(),
         mimetype="text/html"
